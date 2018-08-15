@@ -5,8 +5,8 @@ class BinomialC{
 		int[][] dp = new int[n+1][k+1];
 
 		for(int i=0;i<=n;i++){
-			for(int j=0;j<=k;j++){
-				if(j==0 || j==i || i==0){
+			for(int j=0;j<=Math.min(i, k);j++){
+				if(j==0 || j==i){
 					dp[i][j] = 1;
 				}
 				else{
