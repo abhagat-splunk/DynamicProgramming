@@ -19,7 +19,7 @@ class Tiling{
 		return findTilingWays(n,dp);
 	}
 	public static void main(String args[]){
-		int n = 3;
+		int n = ;
 		System.out.println(findWays(n));
 
 	}
